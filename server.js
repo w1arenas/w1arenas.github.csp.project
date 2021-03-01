@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const Csp = require("./models/cspschema.js")
 
 /////////////// GLOBAL CONFIGURATION
-const mongoURI = "mongodb://localhost:27017/" + "csps"
+const mongoURI = process.env.MONGODB_URI || "mongodb://localhost:27017/" + "csps"
 const db = mongoose.connection;
 
 /////////////// CONNECTION ERROR/SUCCESS
@@ -21,9 +21,12 @@ mongoose.connect(mongoURI, {
     console.log("The connection with Mongo is established.")
 });
 
+/////////////// OPEN CONNECTION TO MONGO
+db.on("open", () => {});
+
 /////////////// APP CONFIGURATION
 const APP = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 
 /////////////// CONTROLLER LOGIC
@@ -31,10 +34,6 @@ const collectionController = require("./controllers/cspcollection.js")
 
 /////////////// MIDDLEWARE
 APP.use(collectionController)
-
-/////////////// DATABASE CONFIGURATION
-
-
 
 /////////////// ITEM CREATION - testing
 const myFirstCspEntry = {

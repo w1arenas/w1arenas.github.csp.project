@@ -1,6 +1,9 @@
 {
   "name": "w1arenas.github.csp.project",
   "version": "1.0.0",
+  "engines": {
+    "node": "14.15.5"
+  },
   "description": "Council Shoulder Patch Collection Project",
   "main": "server.js",
   "scripts": {
