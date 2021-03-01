@@ -6,10 +6,8 @@ const ROUTER = express.Router();
 const Cspschema = require("../models/cspschema.js") 
 
 ROUTER.get("/", (req, res)  => {
-   res.send("Hello world!")
+   res.send("Hello world, all is well...so far!")
 })
-
-
 
 	/////////////// ROUTES
 	// seed route
