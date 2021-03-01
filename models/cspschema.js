@@ -1,13 +1,14 @@
+// Database connection happens in server.js
+
 /////////////// DEPENDENCIES
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema
 
 const cspSchema = new Schema ({
-    name: {type: String, required: true},
+    image: {type: String, required: true},
     council: {type: String, required: true},
     issue: String,
     //body: String,
-    //img: {type: String, required: true},
     //comments: [{body: String}]
 }, {timestamps: true});
 
