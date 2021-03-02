@@ -39,4 +39,3 @@ APP.listen(PORT, () => {
 	console.log("Listening on PORT: " + PORT)
 })
 
-//setTimeout(() => { db.close(); }, 5000)

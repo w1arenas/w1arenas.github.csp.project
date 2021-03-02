@@ -14,6 +14,7 @@ const Csp = require("../models/cspschema.js");
 /////////////// STATIC FILES
 ROUTER.use(express.static("public"));
 
+
 /////////////// ROUTES
 
 //seed route
@@ -21,25 +22,25 @@ ROUTER.get("/cspcollection/seed", (req, res) => {
 	Csp.create([
 		{
 			state: "Georgia",
-			image: "some image",
+			image: "/images/ga-alapaha-area-council-t1b.png",
 			council: "Alapaha Area Council",
 			issue: "T1b"
 		},
 		{
 			state: "Georgia",
-			image: "some image",
+			image: "/images/ga-atlanta-area-council-t11a.png",
 			council: "Atlanta Area Council",
 			issue: "T11a"
 		},
 		{
 			state: "Georgia",
-			image: "some image",
+			image: "/images/ga-central-georgia-council-t2.png",
 			council: "Central Georgia Council",
 			issue: "T2"
 		},		
 		{
 			state: "Georgia",
-			image: "some image",
+			image: "/images/ga-chattahoochee-council-s4.png",
 			council: "Chattahoochee Council",
 			issue: "S4"
 		}
@@ -108,7 +109,6 @@ ROUTER.delete("/cspcollection/:id", (req, res) => {
         res.redirect("/cspcollection")
     });
 });
-
 
 
 
