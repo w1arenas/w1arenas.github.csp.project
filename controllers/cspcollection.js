@@ -1,13 +1,14 @@
 /////////////// DEPENDENCIES
 const express = require("express");
 const ROUTER = express.Router();
-const Csp = require("../models/cspschema.js")
-/////////////// MODELS
-//const Cspschema = require("../models/cspschema.js") 
+const methodOverride = require("method-override");
 
-// ROUTER.get("/", (req, res)  => {
-// 	res.send("Hello world, all is well...so far!")
-// })
+/////////////// MIDDLEWARE
+ROUTER.use(express.urlencoded({extended: true})); //Do I need this here?
+ROUTER.use(methodOverride("_method"))
+
+/////////////// MODELS
+const Csp = require("../models/cspschema.js");
 
 
 /////////////// ROUTES
@@ -73,5 +74,14 @@ ROUTER.get("/cspcollection/:id", (req, res) => {
 		
     });
 });
+
+// delete route
+ROUTER.delete("/cspcollection/:id", (req, res) => {
+	Csp.findByIdAndRemove(req.params.id, (error, deletedCsp) => {
+        console.log("Deleting record: " + req.params.id);
+		console.log(deletedCsp)
+        res.redirect("/cspcollection")
+    });
+})
 
 module.exports = ROUTER;
