@@ -17,21 +17,25 @@ const Csp = require("../models/cspschema.js");
 ROUTER.get("/cspcollection/seed", (req, res) => {
 	Csp.create([
 		{
+			state: "Georgia",
 			image: "some image",
 			council: "Alapaha Area Council",
 			issue: "T1b"
 		},
 		{
+			state: "Georgia",
 			image: "some image",
 			council: "Atlanta Area Council",
 			issue: "T11a"
 		},
 		{
+			state: "Georgia",
 			image: "some image",
 			council: "Central Georgia Council",
 			issue: "T2"
 		},		
 		{
+			state: "Georgia",
 			image: "some image",
 			council: "Chattahoochee Council",
 			issue: "S4"
@@ -82,6 +86,26 @@ ROUTER.delete("/cspcollection/:id", (req, res) => {
 		console.log(deletedCsp)
         res.redirect("/cspcollection")
     });
-})
+});
+
+// edit route
+ROUTER.get("/cspcollection/:id/edit", (req,res) => {
+	Csp.findById(req.params.id, (error, foundCsp) => {
+		res.render("edit.ejs", { csp: foundCsp})
+	});
+});
+
+// put edited csp route
+ROUTER.put("/cspcollection/:id", (req,res) => {
+	//console.log(req.params.id);
+	//res.send(req.params.id);
+
+	Csp.findByIdAndUpdate(req.params.id, req.body, {new: true}, (error, editedCsp) => {
+        //res.send(editedCsp);
+        res.redirect("/cspcollection")
+    });
+});
+
+
 
 module.exports = ROUTER;

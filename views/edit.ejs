@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Page</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Edit Page</h1>
+        <form action="/cspcollection/<%= csp.id %>?_method=PUT" method="POST">
+            State: <input type="text" name="state" value="<%= csp.state %>"/><br/>
+            Image: <input type="text" name="image" value="<%= csp.image %>"/><br/>
+            Council: <input type="text" name="council" value="<%= csp.council %>"/><br/>
+            Issue <input type="text" name="issue" value="<%= csp.issue %>"/><br/>
+            <input type="submit" name="" value="Edit CSP"/>
+        </form>  
+    </div>
+    
+</body>
+</html>

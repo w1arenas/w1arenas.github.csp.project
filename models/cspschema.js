@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema
 
 const cspSchema = new Schema ({
+    state:  {type: String, required: true},
     image: {type: String, required: true},
     council: {type: String, required: true},
     issue: String,
