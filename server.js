@@ -2,7 +2,6 @@
 const express = require("express");	
 const mongoose = require("mongoose");
 
-
 /////////////// DATABASE CONFIGURATION
 const mongoURI = process.env.MONGODB_URI || "mongodb://localhost:27017/" + "csps"
 const db = mongoose.connection;
@@ -31,7 +30,6 @@ db.on("open", () => {});
 const APP = express();
 const PORT = process.env.PORT || 3000;
 
-
 /////////////// CONTROLLER LOGIC
 const collectionController = require("./controllers/cspcollection.js")
 
@@ -42,32 +40,9 @@ APP.use(express.urlencoded({extended: true}));
 ///////////////  MODELS
 const Csp = require("./models/cspschema.js")
 
-///////ROUTES
-
-//index route
-APP.get("/cspcollection", (req, res) => {
-    Csp.find({}, (error, csps) => {
-        res.render("index.ejs", {
-            allCsps: csps
-        })
-    })
-})
 
 
-//new route
-APP.get("/cspcollection/new", (req, res) => {
-    res.render('new.ejs');
-});
 
-// create route
-APP.post('/cspcollection', (req, res) => {
-    // console.log(req.body)
-    // res.send(req.body);
-    Csp.create(req.body, (error, createdCsp) => {
-        // res.send(createdCsp);
-        res.redirect("/cspcollection")
-    });
-});
 
 /////////////// ITEM CREATION - testing
 // const myFirstCspEntry = {

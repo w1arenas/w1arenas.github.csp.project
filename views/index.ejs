@@ -10,7 +10,7 @@
     <div class="container">
         <h1>Index Page</h1>
         <% for (let i = 0; i < allCsps.length; i++) { %>
-            <p> <%= allCsps[i].council %> </p>
+            <p> <a href="/cspcollection/<%= allCsps[i].id %>"><%= allCsps[i].council %> </a></p>
         <% } %>
     </div>
     
