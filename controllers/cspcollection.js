@@ -11,6 +11,9 @@ ROUTER.use(methodOverride("_method"))
 const Csp = require("../models/cspschema.js");
 
 
+/////////////// STATIC FILES
+ROUTER.use(express.static("public"));
+
 /////////////// ROUTES
 
 //seed route
@@ -69,25 +72,6 @@ ROUTER.post('/cspcollection', (req, res) => {
     });
 });
 
-// show route
-ROUTER.get("/cspcollection/:id", (req, res) => {
-    Csp.findById(req.params.id, (error, foundCsp) => {
-		res.render("show.ejs", {
-			csp: foundCsp
-		});
-		
-    });
-});
-
-// delete route
-ROUTER.delete("/cspcollection/:id", (req, res) => {
-	Csp.findByIdAndRemove(req.params.id, (error, deletedCsp) => {
-        console.log("Deleting record: " + req.params.id);
-		console.log(deletedCsp)
-        res.redirect("/cspcollection")
-    });
-});
-
 // edit route
 ROUTER.get("/cspcollection/:id/edit", (req,res) => {
 	Csp.findById(req.params.id, (error, foundCsp) => {
@@ -105,6 +89,27 @@ ROUTER.put("/cspcollection/:id", (req,res) => {
         res.redirect("/cspcollection")
     });
 });
+
+// show route
+ROUTER.get("/cspcollection/:id", (req, res) => {
+    Csp.findById(req.params.id, (error, foundCsp) => {
+		res.render("show.ejs", {
+			csp: foundCsp
+		});
+		
+    });
+});
+
+// delete route
+ROUTER.delete("/cspcollection/:id", (req, res) => {
+	Csp.findByIdAndRemove(req.params.id, (error, deletedCsp) => {
+        // console.log("Deleting record: " + req.params.id);
+		// console.log(deletedCsp)
+        res.redirect("/cspcollection")
+    });
+});
+
+
 
 
 

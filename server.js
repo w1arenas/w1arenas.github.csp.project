@@ -2,6 +2,13 @@
 const express = require("express");	
 const mongoose = require("mongoose");
 
+/////////////// APP CONFIGURATION
+const APP = express();
+const PORT = process.env.PORT || 3000;
+
+///////////////  MODELS
+const Csp = require("./models/cspschema.js")
+
 /////////////// DATABASE CONFIGURATION
 const mongoURI = process.env.MONGODB_URI || "mongodb://localhost:27017/" + "csps"
 const db = mongoose.connection;
@@ -20,16 +27,6 @@ mongoose.connect(mongoURI, {
     console.log("The connection with Mongo is established.")
 });
 
-// open connection to Mongo
-db.on("open", () => {});
-//mongoose.connection.once("open", () => {
-//  console.log("connected to Mongo");
-//});
-
-/////////////// APP CONFIGURATION
-const APP = express();
-const PORT = process.env.PORT || 3000;
-
 /////////////// CONTROLLER LOGIC
 const collectionController = require("./controllers/cspcollection.js")
 
@@ -37,35 +34,9 @@ const collectionController = require("./controllers/cspcollection.js")
 APP.use(collectionController)
 APP.use(express.urlencoded({extended: true}));
 
-///////////////  MODELS
-const Csp = require("./models/cspschema.js")
-
-
-
-
-
-/////////////// ITEM CREATION - testing
-// const myFirstCspEntry = {
-//     image: "some image",
-//     council: "Alapaha Area Council",
-//     issue: "T1b"
-// }
-
-// Csp.create(myFirstCspEntry, (error, cspItem) => {
-//     if (error) {
-//         console.log(error)
-//     } else {
-//         console.log(cspItem)
-//     }
-// })
-
-
-
-
-
 /////////////// LISTENER
 APP.listen(PORT, () => {
 	console.log("Listening on PORT: " + PORT)
 })
 
-setTimeout(() => { db.close(); }, 5000)
+//setTimeout(() => { db.close(); }, 5000)
