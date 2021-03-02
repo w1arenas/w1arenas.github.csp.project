@@ -433,9 +433,16 @@ th {
 
 
 
-.cspimage {
+.cspshowimage {
 
   width: 50%;
   height: 50%;
+
+}
+
+.csphomeimage {
+
+  width: 25%;
+  height: 25%;
 
 }

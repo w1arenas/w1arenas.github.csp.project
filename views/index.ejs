@@ -14,13 +14,12 @@
             Council Shoulder Patches <br>
             from the State of Georgia
         </h1>
-        <nav>
-            <a href="/cspcollection">Home</a>
-            <a href="/cspcollection/new">Add a CSP</a>
-        </nav>
+
         <% for (let i = 0; i < allCsps.length; i++) { %>
-            <p> <a href="/cspcollection/<%= allCsps[i].id %>"><%= allCsps[i].council %> </a></p>
-        
+            <div class="display">
+            <img class="csphomeimage" src="<%= allCsps[i].image %>" alt="">
+            <p><a href="/cspcollection/<%= allCsps[i].id %>"><%= allCsps[i].council %> </a> </p><br>
+            </div> 
         <% } %>
     </div>
     
