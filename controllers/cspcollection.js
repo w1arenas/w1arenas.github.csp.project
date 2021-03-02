@@ -10,6 +10,11 @@ const Csp = require("../models/cspschema.js")
 // })
 
 
+/////////////// ROUTES
+
+//seed route
+
+
 //index route
 ROUTER.get("/cspcollection", (req, res) => {
     Csp.find({}, (error, csps) => {
@@ -37,10 +42,11 @@ ROUTER.post('/cspcollection', (req, res) => {
 // show route
 ROUTER.get("/cspcollection/:id", (req, res) => {
     Csp.findById(req.params.id, (error, foundCsp) => {
-        res.send("getting the csp show")
+	res.render("show.ejs", {
+		csp: foundCsp
+	}) 
+		
     })
-
 });
- 
-module.exports = ROUTER;
 
+module.exports = ROUTER;
