@@ -7,6 +7,7 @@ const Schema = mongoose.Schema
 const cspSchema = new Schema ({
     state:  {type: String, required: true},
     image: {type: String, required: true},
+    simpleimage: {type: String, required: true},
     council: {type: String, required: true},
     issue: String,
     //body: String,

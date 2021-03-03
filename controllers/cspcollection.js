@@ -23,27 +23,81 @@ ROUTER.get("/cspcollection/seed", (req, res) => {
 		{
 			state: "Georgia",
 			image: "/images/ga-alapaha-area-council-t1b.png",
+			simpleimage: "/images/ga-simple-alapaha-area-council-t1b.png",
 			council: "Alapaha Area Council",
 			issue: "T1b"
 		},
 		{
 			state: "Georgia",
 			image: "/images/ga-atlanta-area-council-t11a.png",
+			simpleimage: "/images/ga-simple-atlanta-area-council-t11a.png",
 			council: "Atlanta Area Council",
 			issue: "T11a"
 		},
 		{
 			state: "Georgia",
 			image: "/images/ga-central-georgia-council-t2.png",
+			simpleimage: "/images/ga-simple-central-georgia-council-t2.png",
 			council: "Central Georgia Council",
 			issue: "T2"
 		},		
 		{
 			state: "Georgia",
 			image: "/images/ga-chattahoochee-council-s4.png",
+			simpleimage: "/images/ga-simple-chattahoochee-council-s4.png",
 			council: "Chattahoochee Council",
 			issue: "S4"
-		}
+		},
+		{
+			state: "Georgia",
+			image: "/images/ga-coastal-empire-council-t7.png",
+			simpleimage: "/images/ga-simple-coastal-empire-council-t7.png",
+			council: "Coastal Empire Council",
+			issue: "T7"
+		},
+		{
+			state: "Georgia",
+			image: "/images/ga-flint-river-council-s4b.png",
+			simpleimage: "/images/ga-simple-flint-river-council-s4b.png",
+			council: "Flint River Council",
+			issue: "S4b"
+		},
+		{
+			state: "Georgia",
+			image: "/images/ga-georgia-carolina-council-s2.png",
+			simpleimage: "/images/ga-simple-georgia-carolina-council-s2.png",
+			council: "Georgia Carolina Council",
+			issue: "S2"
+		},
+		{
+			state: "Georgia",
+			image: "/images/ga-northeast-georgia-council-s3.png",
+			simpleimage: "/images/ga-simple-northeast-georgia-council-s3.png",
+			council: "Northeast Georgia Council",
+			issue: "S3"
+		},
+		{
+			state: "Georgia",
+			image: "/images/ga-northwest-georgia-council-S3.png",
+			simpleimage: "/images/ga-simple-northwest-georgia-council-s3.png",
+			council: "Northwest Georgia Council",
+			issue: "S3"
+		},
+		{
+			state: "Georgia",
+			image: "/images/ga-okefenokee-area-council-S4a.png",
+			simpleimage: "/images/ga-simple-okefenokee-area-council-S4a.png",
+			council: "Okefenokee Area Council",
+			issue: "S4a"
+		},
+		{
+			state: "Georgia",
+			image: "/images/ga-southwest-georgia-council-s2.png",
+			simpleimage: "/images/ga-simple-southwest-georgia-council-s2.png",
+			council: "Southwest Georgia Area Council",
+			issue: "S2"
+		},
+
 	], (error, data) => {
 		res.redirect("/cspcollection");
 	})

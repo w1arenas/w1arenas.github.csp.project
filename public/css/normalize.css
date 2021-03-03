@@ -440,9 +440,22 @@ th {
 
 }
 
+.display-holder {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
 .csphomeimage {
 
+  justify-content: center;
   width: 25%;
-  height: 25%;
+  height: 50%;
 
+}
+
+.display {
+  justify-content: center;
 }

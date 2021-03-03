@@ -9,18 +9,20 @@
     <title>My CSP Collection</title>
 </head>
 <body>
+    <h1>My Collection of <br>
+        Council Shoulder Patches <br>
+        from the State of Georgia
+    </h1>
     <div class="container">
-        <h1>My Collection of <br>
-            Council Shoulder Patches <br>
-            from the State of Georgia
-        </h1>
 
-        <% for (let i = 0; i < allCsps.length; i++) { %>
-            <div class="display">
-            <img class="csphomeimage" src="<%= allCsps[i].image %>" alt="">
-            <p><a href="/cspcollection/<%= allCsps[i].id %>"><%= allCsps[i].council %> </a> </p><br>
-            </div> 
-        <% } %>
+        <div class="display-holder">
+            <% for (let i = 0; i < allCsps.length; i++) { %>
+                <div class="display">
+                <img class="csphomeimage" src="<%= allCsps[i].simpleimage %>" alt="">
+                <p><a class="csphomeimage" href="/cspcollection/<%= allCsps[i].id %>"><%= allCsps[i].council %> </a> </p><br>
+                </div> 
+            <% } %>
+        </div>
     </div>
     
 </body>
