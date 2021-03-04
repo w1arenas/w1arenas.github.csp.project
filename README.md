@@ -31,5 +31,33 @@ This project is designed to demonstrate the ability to create a full stack appli
 
 ![](/public/images/project-draft.png)
 
+## Version 1.0
 
+### MVP
+Version 1.0 of my project met the MVP (minimal viable product) deliverable. It included the following requirements:
+- A working full-stack application using Node.js, Mongoose, Express and EJS.
+- MVC file structure (Models, Views, Controllers)
+- 7 RESTful routes and full CRUD
+- Git repository
+- Deployed online to Heroku
+- A README.md file with links to the Git repository and the working app in Heroku.
+
+### Optional features included in version 1.0
+In addition to the MVP, the following optional features were included in v1.0:
+- EJS Partials
+- Skeleton CSS
+
+
+## Version 1.0
+Met all the initial 
+
+## Features Being Considered for Further Development
+- Password required for NEW, EDIT and DELETE routes.
+- Add a field in the SHOW pages to provide additional information on the CSP and the council.
+- Expand the scope of the project to showcase my full collection.
+- Add a page to provide information on how to identify different issues of the CSP.
+- Add a page of duplicates CSPs and make them available for trade and/or purchase. Perhaps a shopping cart.
+- Incorporate Google Maps to show where the councils are located.
+
+## Thank You!
 I hope you enjoy your experience while navigating my collection of Council Shoulder Patches from the state of Georgia!
