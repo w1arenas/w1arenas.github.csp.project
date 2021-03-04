@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/skeleton.css">
+    <link rel="stylesheet" href="/css/app.css">
+
     <title>My CSP Collection</title>
 </head>
 <body>
@@ -15,14 +15,14 @@
     </h1>
     <div class="container">
 
-        <div class="display-holder">
+
             <% for (let i = 0; i < allCsps.length; i++) { %>
                 <div class="display">
                 <img class="csphomeimage" src="<%= allCsps[i].simpleimage %>" alt="">
-                <p><a class="csphomeimage" href="/cspcollection/<%= allCsps[i].id %>"><%= allCsps[i].council %> </a> </p><br>
+                <a class="csphomelink" href="/cspcollection/<%= allCsps[i].id %>"><%= allCsps[i].council %> </a> <br><br>
                 </div> 
             <% } %>
-        </div>
+
     </div>
     
 </body>

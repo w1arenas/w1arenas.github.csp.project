@@ -435,27 +435,31 @@ th {
 
 .cspshowimage {
 
-  width: 50%;
-  height: 50%;
+  width: 80%;
+  height: 80%;
 
 }
 
 .display-holder {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
-  flex-wrap: wrap;
+  border: 1px blue solid;
+
+
 
 }
 
 .csphomeimage {
 
-  justify-content: center;
-  width: 25%;
+  
+  width: 80%;
   height: 50%;
 
 }
 
 .display {
-  justify-content: center;
+  
+  border: 1px yellow solid;
+  padding: 10px;
+  float: left;
+  width: 27%;
+  box-sizing: border-box;
 }
