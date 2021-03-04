@@ -9,17 +9,19 @@
     <title>Edit Page</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Edit Page</h1>
-        <form action="/cspcollection/<%= csp.id %>?_method=PUT" method="POST">
-            State: <input type="text" name="state" value="<%= csp.state %>"/><br/>
-            Image: <input type="text" name="image" value="<%= csp.image %>"/><br/>
-            Simple Image: <input type="text" name="simpleimage" value="<%= csp.simpleimage %>"/><br/>
-            Council: <input type="text" name="council" value="<%= csp.council %>"/><br/>
-            Issue <input type="text" name="issue" value="<%= csp.issue %>"/><br/>
-            <input type="submit" name="" value="Edit CSP"/>
-        </form>  
-        <p><a href="/cspcollection"><button>Back to Home Page</button></a></p>
+    <%- include ("./partials/header.ejs") %>
+    <h2 id="edit-page">Edit Page</h2>
+    <div class="container">    
+        <div>
+            <form action="/cspcollection/<%= csp.id %>?_method=PUT" method="POST">
+                State: <input type="text" name="state" value="<%= csp.state %>"/><br/>
+                Image: <input type="text" name="image" value="<%= csp.image %>"/><br/>
+                Simple Image: <input type="text" name="simpleimage" value="<%= csp.simpleimage %>"/><br/>
+                Council: <input type="text" name="council" value="<%= csp.council %>"/><br/>
+                Issue <input type="text" name="issue" value="<%= csp.issue %>"/><br/>
+                <input type="submit" name="" value="Edit CSP"/>
+            </form>  
+        </div>
     </div>
     
 </body>

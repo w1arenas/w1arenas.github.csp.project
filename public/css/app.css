@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-    color: #1EAEDB; }
+    color: #fff; }
   a:hover {
     color: #0FA0CE; }
   
@@ -174,25 +174,17 @@ img {
     border: 0;
   }
 
-  /**
- * Address `overflow` set to `hidden` in IE 8/9/10/11.
- */
 
 button {
     overflow: visible;
   }
   
-  /**
-   * Address inconsistent `text-transform` inheritance for `button` and `select`.
-   * All other form control elements do not inherit `text-transform` values.
-   * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
-   * Correct `select` style inheritance in Firefox.
-   */
-  
   button,
   select {
     text-transform: none;
   }
+
+
 .display {
 
     text-align: center;
@@ -241,3 +233,18 @@ button {
     text-decoration: none;
     font-size: 18px;
 }
+
+#navbar a:hover {
+    color: #0FA0CE; }
+
+#main-footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.showpage {
+    padding: 40px;
+  }

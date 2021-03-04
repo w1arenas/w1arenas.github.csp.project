@@ -9,7 +9,7 @@
     <title><%= csp.council %></title>
 </head>
 <body>
-
+    <%- include ("./partials/header.ejs") %>
     <div class="container">
         <div class="showpage">
             <h2>State: <%= csp.state %></h2>
@@ -17,8 +17,6 @@
         
         <p><h3>Council: <%= csp.council %></h3></p>
         <p><h3>Issue: <%= csp.issue %></h3></p>
-        <p><a href="/cspcollection"><button>Back to Home Page</button></a></p>
-
 
         <!-- Delete button -->
         <form action="/cspcollection/<%= csp.id %>?_method=DELETE" method="POST">
@@ -28,8 +26,6 @@
         <!-- Send user to Edit Page -->
         <button><a href="/cspcollection/<%= csp.id %>/edit">Edit</a></button>
 
-        <!-- Send user to New Page -->
-        <button><a href="/cspcollection/new">Add a CSP</a></button>
     </div>
     </div>
 

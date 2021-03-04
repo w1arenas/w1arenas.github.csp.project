@@ -9,14 +9,17 @@
     <title>Add a new CSP</title>
 </head>
 <body>
+    <%- include ("./partials/header.ejs") %>
     <div class="container">
-        <h1>Add a New CSP</h1>
         <form action="/cspcollection" method="POST">
+            State: <input type="text" name="state"/><br/>
             Image <input type="text" name="image"/><br/>
+            Simple Image: <input type="text" name="simpleimage"/><br/>
             Council: <input type="text" name="council"><br/>
             Issue <input type="text" name="issue"><br/>
             <input type="submit" name="" value="Add CSP"/>
         </form>  
+
     </div>
     
 </body>
