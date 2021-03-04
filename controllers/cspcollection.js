@@ -103,8 +103,6 @@ ROUTER.get("/cspcollection/seed", (req, res) => {
 	})
 })
 
-
-
 //index route
 ROUTER.get("/cspcollection", (req, res) => {
     Csp.find({}, (error, csps) => {
