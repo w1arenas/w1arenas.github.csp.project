@@ -23,8 +23,8 @@ Welcome to my collection project. This full-stack project has been created using
 ## The Project
 This project is designed to demonstrate the ability to create a full stack application deployed to a cloud platform.  This simple design addresses all the elements required for an end-to-end, full-stack application. In addition to the above technologies, this application includes:
 
- SoC (separation of concerns) through the use of a controller.
- DRY (don't repeat yourself) principle with the use of partials.
+ - SoC (separation of concerns) through the use of a controller.
+ - DRY (don't repeat yourself) principle with the use of partials.
 
  ## Initial Design
 
@@ -45,10 +45,6 @@ Version 1.0 of my project met the MVP (minimal viable product) deliverable. It i
 In addition to the MVP, the following optional features were included in v1.0:
 - EJS Partials
 - Skeleton CSS
-
-
-## Version 1.0
-Met all the initial 
 
 ## Features Being Considered for Further Development
 - Password required for NEW, EDIT and DELETE routes.
