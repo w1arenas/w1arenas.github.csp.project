@@ -34,6 +34,11 @@ const collectionController = require("./controllers/cspcollection.js")
 APP.use(collectionController)
 APP.use(express.urlencoded({extended: true}));
 
+//root route
+APP.get("/", (req, res) => {
+    res.redirect('/cspcollection');
+});
+
 /////////////// LISTENER
 APP.listen(PORT, () => {
 	console.log("Listening on PORT: " + PORT)
