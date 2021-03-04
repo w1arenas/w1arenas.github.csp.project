@@ -117,6 +117,11 @@ ROUTER.get("/cspcollection/new", (req, res) => {
     res.render('new.ejs');
 });
 
+//history route
+ROUTER.get("/cspcollection/history", (req, res) => {
+    res.render('history.ejs');
+});
+
 // create route
 ROUTER.post('/cspcollection', (req, res) => {
     // console.log(req.body)

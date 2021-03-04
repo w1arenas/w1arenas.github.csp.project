@@ -440,13 +440,6 @@ th {
 
 }
 
-.display-holder {
-  border: 1px blue solid;
-
-
-
-}
-
 .csphomeimage {
 
   
@@ -456,10 +449,12 @@ th {
 }
 
 .display {
-  
-  border: 1px yellow solid;
   padding: 10px;
   float: left;
   width: 27%;
   box-sizing: border-box;
+}
+
+.showpage {
+  padding: 40px;
 }

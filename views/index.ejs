@@ -9,21 +9,42 @@
     <title>My CSP Collection</title>
 </head>
 <body>
-    <h1>My Collection of <br>
-        Council Shoulder Patches <br>
-        from the State of Georgia
-    </h1>
+    <header id="main-header">  
+        <div >
+            <h1>CSP Collection</h1>
+        </div>
+    </header>
+
+    <nav id="navbar">  
+        <div class="container">
+            <ul>
+                <li><a href="/cspcollection">Home</a>  </li> 
+                <li><a href="/cspcollection/history">History </a> </li>
+                <li><a href="/cspcollection/new">Add a CSP</a> </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="showcase">
+        <div class="container">
+            <p> Welcome to my collection of Council Shoulder Patches (CSP) from the state of Goergia. Enjoy your visit! </p><br>
+        </div>
+    </section>
+
     <div class="container">
 
 
             <% for (let i = 0; i < allCsps.length; i++) { %>
                 <div class="display">
-                <img class="csphomeimage" src="<%= allCsps[i].simpleimage %>" alt="">
+                <a href="/cspcollection/<%= allCsps[i].id %>"><img class="csphomeimage" src="<%= allCsps[i].simpleimage %>" alt=""></a>
                 <a class="csphomelink" href="/cspcollection/<%= allCsps[i].id %>"><%= allCsps[i].council %> </a> <br><br>
                 </div> 
             <% } %>
 
     </div>
     
+    <footer id="main-footer">
+        <p>Copyright &copy; 2021 - My CSP Collection</p>
+    </footer>
 </body>
 </html>

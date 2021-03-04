@@ -138,7 +138,6 @@ a {
     /* margin: 0 auto; */
     padding: 0 10px;
     box-sizing: border-box; 
-    border: 5px red solid;
   }
 
   /* Spacing
@@ -195,8 +194,7 @@ button {
     text-transform: none;
   }
 .display {
-  
-    border: 1px yellow solid;
+
     text-align: center;
     padding: 10px;
     float: left;
@@ -211,4 +209,35 @@ button {
     margin-left: auto;
     margin-right: auto;
 
+}
+
+#main-header {
+    background-color: coral;
+    color: #fff;
+    padding-left: 80px;
+    display: flex;
+    justify-content: left;
+}
+
+#navbar {
+    background-color: #333;
+    color: #fff;
+}
+
+#navbar ul {
+    padding: 0;
+    list-style: none;
+
+}
+
+#navbar li {
+    display: inline;
+    color: #fff;
+    padding-right: 30px;
+}
+
+#navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
 }
