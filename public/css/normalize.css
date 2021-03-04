@@ -506,3 +506,11 @@ height: auto;
 #edit-page {
   text-align: center;
 }
+
+#history-h2 {
+  text-align: center;
+}
+
+#history-article {
+  margin: 40px;
+}
