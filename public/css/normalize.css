@@ -1,3 +1,13 @@
+/* /////////////////////// CREDIT /////////////////////////
+PORTIONS OF THIS STYLE WERE TAKEN FROM THE TUTORIAL BY  
+TRAVERSY MEDIA TITLED: "CSS CRASH COURSE FOR ABSOLUTE BEGINNERS"
+VIDEO CAN BE VIEWED ON YouTube AT:
+
+https://www.youtube.com/watch?v=yfoY53QXEnI
+
+*/
+
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
 /**
@@ -463,23 +473,30 @@ height: auto;
   padding-left: 80px;
   display: flex;
   justify-content: left;
+  
 }
 
 #navbar {
   background-color: #333;
   color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 #navbar ul {
   padding: 0;
   list-style: none;
-
+  margin: auto;
+  margin-right: 0;
 }
 
 #navbar li {
   display: inline;
   color: #fff;
   padding-right: 30px;
+
+  
 }
 
 #navbar a {
@@ -513,4 +530,9 @@ height: auto;
 
 #history-article {
   margin: 40px;
+}
+
+#headerh1 {
+  margin-top: 20px;
+
 }
