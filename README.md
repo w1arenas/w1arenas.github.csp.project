@@ -1,9 +1,8 @@
-# w1arenas.github.csp.project
-## Council Shoulder Patch Collection Project
+# Council Shoulder Patch Collection Project
 
-GitHub: <link>:<https://github.com/w1arenas/w1arenas.github.csp.project>
+GitHub: <link><https://github.com/w1arenas/w1arenas.github.csp.project>
 
-HEROKU: <link>:<https://csp-collection.herokuapp.com/cspcollection>
+HEROKU: <link><https://csp-collection.herokuapp.com/cspcollection>
 
 ## Technologies
 Welcome to my collection project. This full-stack project has been created using following technologies:

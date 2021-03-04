@@ -85,8 +85,8 @@ ROUTER.get("/cspcollection/seed", (req, res) => {
 		},
 		{
 			state: "Georgia",
-			image: "/images/ga-okefenokee-area-council-S4a.png",
-			simpleimage: "/images/ga-simple-okefenokee-area-council-S4a.png",
+			image: "/images/ga-okefenokee-area-council-s4a.png",
+			simpleimage: "/images/ga-simple-okefenokee-area-council-s4a.png",
 			council: "Okefenokee Area Council",
 			issue: "S4a"
 		},
