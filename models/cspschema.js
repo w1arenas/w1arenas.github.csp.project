@@ -10,6 +10,7 @@ const cspSchema = new Schema ({
     simpleimage: {type: String, required: true},
     council: {type: String, required: true},
     issue: String,
+    location: String,
     //body: String,
     //comments: [{body: String}]
 }, {timestamps: true});

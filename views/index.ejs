@@ -8,20 +8,23 @@
     <%- include ("./partials/header.ejs") %>
 
     <section id="showcase">
-        <div class="container">
-            <p> Welcome to my collection of Council Shoulder Patches (CSP) from the state of Goergia. Enjoy your visit! </p><br>
+
+            <h1>Welcome to My Site</h1>
+            <h3>Showcasing my collection of Council Shoulder Patches</h3>
         </div>
     </section>
 
+    <p><h2 id="state">Georgia Councils</h2></p>
+
     <div class="container">
 
-
-            <% for (let i = 0; i < allCsps.length; i++) { %>
-                <div class="display">
-                <a href="/cspcollection/<%= allCsps[i].id %>"><img class="csphomeimage" src="<%= allCsps[i].simpleimage %>" alt=""></a>
-                <a class="csphomelink" href="/cspcollection/<%= allCsps[i].id %>"><%= allCsps[i].council %> </a> <br><br>
-                </div> 
-            <% } %>
+        
+        <% for (let i = 0; i < allCsps.length; i++) { %>
+            <div class="display">
+            <a href="/cspcollection/<%= allCsps[i].id %>"><img class="csphomeimage" src="<%= allCsps[i].simpleimage %>" alt=""></a>
+            <a class="csphomelink" href="/cspcollection/<%= allCsps[i].id %>"><%= allCsps[i].council %> </a> <br><br>
+            </div> 
+        <% } %>
 
     </div>
     

@@ -477,7 +477,7 @@ height: auto;
 }
 
 #navbar {
-  background-color: #333;
+  background-color: coral;
   color: #fff;
   position: sticky;
   top: 0;
@@ -535,4 +535,27 @@ height: auto;
 #headerh1 {
   margin-top: 20px;
 
+}
+
+#showcase {
+  background-image: url(../images/cspbackground.png);
+  background-position: center right;
+  min-height: 180px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#showcase h1 {
+  color: #fff;
+  font-size: 50px;
+  padding-top: 30px;
+}
+
+#showcase h3 {
+  color: #fff;
+  font-size: 20px;
+}
+
+#state {
+  text-align: center;
 }

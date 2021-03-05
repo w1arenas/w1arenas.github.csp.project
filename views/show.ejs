@@ -14,6 +14,9 @@
         <p><h3>Council: <%= csp.council %></h3></p>
         <p><h3>Issue: <%= csp.issue %></h3></p>
 
+        <p>Council Location:</p>
+        <iframe src="<%= csp.location %>" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
         <!-- Delete button -->
         <form action="/cspcollection/<%= csp.id %>?_method=DELETE" method="POST">
             <input type="submit" value="DELETE">
