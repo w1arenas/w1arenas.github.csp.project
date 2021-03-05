@@ -4,8 +4,11 @@ GitHub: <link><https://github.com/w1arenas/w1arenas.github.csp.project>
 
 HEROKU: <link><https://csp-collection.herokuapp.com/cspcollection>
 
+## The Project
+Welcome to my collection project. The project showcases part of my collection of BSA Council Shoulder Patches and it has been designed to demonstrate the ability to create a full stack application deployed to a cloud platform.
+
 ## Technologies
-Welcome to my collection project. This full-stack project has been created using following technologies:
+ This full-stack project has been created using following technologies:
 
 - Mongo database
 - Mongoose object modeling
@@ -20,11 +23,11 @@ Welcome to my collection project. This full-stack project has been created using
 - Git version control
 - Heroku cloud deployment
 
-## The Project
-This project is designed to demonstrate the ability to create a full stack application deployed to a cloud platform.  This simple design addresses all the elements required for an end-to-end, full-stack application. In addition to the above technologies, this application includes:
+In addition to the above technologies, this application includes:
 
+ - Responsive web design.
  - SoC (separation of concerns) through the use of a controller.
- - DRY (don't repeat yourself) principle with the use of partials.
+ - DRY (don't repeat yourself) principle through the use of partials.
 
  ## Initial Design
 
@@ -47,13 +50,16 @@ In addition to the MVP, the following optional features were included in v1.0:
 - Skeleton CSS
 - Fully responsive, including mobile devices.
 
+## Version 1.1
+
+The latest release of my project include Google Maps in the show page that indicates the location of every council headquarters.
+
 ## Features Being Considered for Further Development
 - Password required for NEW, EDIT and DELETE routes.
 - Add a field in the SHOW pages to provide additional information on the CSP and the council.
 - Expand the scope of the project to showcase my full collection.
 - Add a page to provide information on how to identify different issues of the CSP.
 - Add a page of duplicates CSPs and make them available for trade and/or purchase. Perhaps a shopping cart.
-- Incorporate Google Maps to show where the councils are located.
 
 ## Thank You!
-I hope you enjoy your experience while navigating my collection of Council Shoulder Patches from the state of Georgia!
+I hope you enjoy your experience while navigating my collection of Council Shoulder Patches!
